@@ -1,12 +1,15 @@
 package com.jpmc.theater.validators;
 
+import com.google.inject.Inject;
+import com.google.inject.Singleton;
 import com.jpmc.theater.models.Showing;
+import lombok.NoArgsConstructor;
 import org.apache.log4j.Logger;
 
-import javax.inject.Singleton;
 import java.util.List;
 
 @Singleton
+@NoArgsConstructor(onConstructor_ = @Inject)
 public class TheaterValidator {
     final Logger logger = Logger.getLogger(TheaterValidator.class);
 

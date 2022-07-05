@@ -1,13 +1,13 @@
 package com.jpmc.theater.converter;
 
 import com.google.inject.Inject;
+import com.google.inject.Singleton;
 import com.jpmc.theater.managers.MovieManager;
 import com.jpmc.theater.models.Showing;
 import com.jpmc.theater.utils.TheaterUtil;
 import com.jpmc.theater.ws.WsShowing;
 import lombok.AllArgsConstructor;
 
-import javax.inject.Singleton;
 
 @AllArgsConstructor(onConstructor_ = @Inject)
 @Singleton

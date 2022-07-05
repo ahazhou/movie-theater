@@ -1,13 +1,13 @@
 package com.jpmc.theater.managers;
 
 import com.google.inject.Inject;
+import com.google.inject.Singleton;
 import com.jpmc.theater.models.Movie;
 import com.jpmc.theater.models.Reservation;
 import lombok.AllArgsConstructor;
 import lombok.NonNull;
 import org.apache.log4j.Logger;
 
-import javax.inject.Singleton;
 import java.math.BigDecimal;
 
 @AllArgsConstructor(onConstructor_ = @Inject)

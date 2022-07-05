@@ -1,6 +1,7 @@
 package com.jpmc.theater.managers;
 
 import com.google.inject.Inject;
+import com.google.inject.Singleton;
 import com.jpmc.theater.models.Movie;
 import com.jpmc.theater.models.Showing;
 import com.jpmc.theater.utils.DiscountUtil;
@@ -8,7 +9,6 @@ import com.jpmc.theater.utils.TheaterUtil;
 import lombok.RequiredArgsConstructor;
 import org.apache.log4j.Logger;
 
-import javax.inject.Singleton;
 import java.math.BigDecimal;
 
 @RequiredArgsConstructor(onConstructor_ = @Inject)

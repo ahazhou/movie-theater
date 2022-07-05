@@ -1,15 +1,18 @@
 package com.jpmc.theater.utils;
 
 import com.google.common.annotations.VisibleForTesting;
+import com.google.inject.Inject;
+import com.google.inject.Singleton;
+import lombok.NoArgsConstructor;
 import org.apache.log4j.Logger;
 
-import javax.inject.Singleton;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 @Singleton
+@NoArgsConstructor(onConstructor_ = @Inject)
 public class TheaterUtil {
     final Logger logger = Logger.getLogger(TheaterUtil.class);
 

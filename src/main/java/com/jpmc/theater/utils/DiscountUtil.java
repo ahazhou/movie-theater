@@ -2,17 +2,20 @@ package com.jpmc.theater.utils;
 
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.base.Suppliers;
+import com.google.inject.Inject;
+import com.google.inject.Singleton;
 import com.jpmc.theater.models.Movie;
 import com.jpmc.theater.models.Showing;
+import lombok.NoArgsConstructor;
 import org.apache.log4j.Logger;
 
-import javax.inject.Singleton;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.function.Supplier;
 
 @Singleton
+@NoArgsConstructor(onConstructor_ = @Inject)
 public class DiscountUtil {
     final Logger logger = Logger.getLogger(DiscountUtil.class);
 
